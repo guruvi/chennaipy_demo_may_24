@@ -11,10 +11,10 @@ MIN = 90000000
 MAX = 90000100
 
 # Benchmark Python function against the custom handwritten sub-interpreter parallelism module.
-print(f"Sub-interpreter parallelism mode started for {NUM_TASKS} regular Python tasks")
+print(f"Sub-interpreter started for {NUM_TASKS} regular Python tasks")
 start = time.time()
 
 result = parallel(*[['isolated_benchmark', 'some_method', (randint(MIN,MAX),)] for _ in range(NUM_TASKS)])
 
 end = time.time()
-print(f"Sub-interpreter parallelism mode ended with in {end-start} seconds")
+print(f"Sub-interpreter execution ended in {end-start} seconds")
