@@ -18,7 +18,7 @@ https://docs.google.com/presentation/d/1K5AF9vRN46974N2Aa_Ud702Gki7w3qoGjyVyx9Wu
 https://github.com/RishiRaj22/PythonParallelism
 
 1. Add benchmarking directory from this folder is treated as a Python source directory. 
-    `export PYTHONPATH="$PYTHONPATH:`pwd`/sub_interpreter_demo/benchmarking"`
+    export PYTHONPATH="$PYTHONPATH:`pwd`/sub_interpreter_demo/benchmarking"
 2. Ensure that setuptools is available locally. `poetry run python3 sub_interpreter_demo/setup.py install`
 3. Run demo code: `poetry run python sub_interpreter_demo/demo.py`
 
